@@ -1,0 +1,21 @@
+# Core ML Libraries
+torch>=2.0.0
+transformers>=4.30.0
+scikit-learn>=1.3.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Word Embeddings
+gensim>=4.3.0
+
+# Progress bars: https://tqdm.github.io/
+tqdm>=4.65.0
+
+# Kaggle API (for downloading dataset)
+kaggle>=1.5.0
