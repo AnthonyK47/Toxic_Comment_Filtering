@@ -7,15 +7,10 @@ This project compares two approaches for detecting toxic comments: BERT (a pre-t
 3832_final_project/
 |── Project_presentation/
 |   |── Slide Show.pdf                             # Copy of the slide deck
-|   |── Project Presentation.mp4                   # Project presentation
 |   |── Toxic Comment Filtering Final Report.pdf   # Summary of the entire project
 |── src_BERT/
-|   |── dataset/
-│   |   |── train.csv                              # Training data
 │   |── Kaggle_BERT_Notebook.ipynb                 # BERT training code (Kaggle notebook), see notebook for what each block of code does
 |── src_LSTM/
-|   |── dataset/
-│   |   |── train.csv                              # Training data
 │   |── W2V_LSTM_config.py                         # Configuration settings
 │   |── W2V_LSTM_model.py                          # LSTM architecture
 │   |── W2V_LSTM_dataset.py                        # Dataset class
@@ -24,6 +19,7 @@ This project compares two approaches for detecting toxic comments: BERT (a pre-t
 │   |── W2V_LSTM_results.py                        # View saved results
 |                   
 |── README.md
+|── Requirements.txt
 ```
 
 ## Dependencies
@@ -44,9 +40,7 @@ nltk.download('punkt')
 Download the **Jigsaw Toxic Comment Classification** dataset from Kaggle:
 https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data
 
-Put `train.csv` in the `dataset/` folder (or update the path in the code).
-
-The dataset also exists in both src files
+Create a dataset folder and put `train.csv` in the `dataset/` folder (or update the path in the code).
 
 ## How to Run
 
@@ -70,3 +64,4 @@ The dataset also exists in both src files
 3. Training will vary based on if you use GPU vs CPU. GPU will be faster though.
 4. Model saves to `word2vec_lstm_model.pt`
 5. To view results run `python src_W2V_LSTM/W2V_LSTM_results.py`
+
