@@ -1,5 +1,5 @@
 import torch
-from src_LSTM.W2V_LSTM_train import config
+from W2V_LSTM_train import config
 
 checkpoint = torch.load(config.MODEL_PATH, weights_only=False)
 
@@ -16,6 +16,7 @@ print(f"F1-Score:  {metrics['f1_score']:.4f}")
 print(f"AUC:       {metrics['auc']:.4f}")
 
 print("\n" + "=" * 60)
+
 
 
 
